@@ -8,6 +8,10 @@
 .idea/
 *.iml
 
+*.swp
+*.swap
+_output/
+
 # Test binary, built with `go test -c`
 *.test
 
