@@ -3,9 +3,6 @@ package main
 import (
 	"fmt"
 	"gopkg.in/alecthomas/kingpin.v2"
-	"gopkg.in/yaml.v2"
-	"io/ioutil"
-	"os"
 )
 
 var (
@@ -42,14 +39,5 @@ func main() {
 			fmt.Println(a)
 		}
 	}
-
-	// Read Configuration from File
-	file, err := ioutil.ReadFile("config.yml")
-	err = yaml.Unmarshal(file, &Config)
-	if err != nil {
-		log.Errorf("Load configuration failed: %s", err)
-		os.Exit(0)
-	}
-	log.Infoln(Config)
 
 }
