@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	md52 "crypto/md5"
+	"fmt"
 )
 
 type LogAlert struct {
